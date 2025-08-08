@@ -15,6 +15,7 @@ function showImage(){
 }
 
 function play(){
+	document.getElementById("heartTxt").style.display = "none";
 	if(t == 0){
 		myImage.setAttribute("src", "");
 		myTxt.innerHTML = "";
