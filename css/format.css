@@ -1,3 +1,4 @@
+/* Text above the image (typing effect section) */
 #typeDiv {
 	position: absolute;
 	top: 45%;
@@ -9,18 +10,14 @@
 	text-align: center;
 }
 
-#txt1 {
-	font-size: 16px;
-	text-align: center;
-	color: white;
-}
-#txt2 {
+#txt1, #txt2 {
 	font-size: 16px;
 	text-align: center;
 	color: white;
 }
 
-#content{
+/* Timer and heading */
+#content {
 	position: absolute;
 	top: 1%;
 	left: 0;
@@ -30,37 +27,25 @@
 	height: 20%;
 }
 
-#together{
+#together {
 	font-size: 25px;
 	text-align: center;
 	color: white;
 }
 
-#timer{
+#timer {
 	text-align: center;
 	color: white;
 }
 
-#d{
+#d, #h, #m, #s {
 	font-size: 19px;
 }
 
-#h{
-	font-size: 19px;
-}
-
-#m{
-	font-size: 19px;
-}
-
-#s{
-	font-size: 19px;
-}
-
-/* Place heart/play button at bottom without blocking text */
+/* Heart / Play button section fixed at bottom */
 #heartTxt {
 	position: fixed;
-	bottom: 20px; /* Slight gap from bottom */
+	bottom: 20px;
 	left: 0;
 	right: 0;
 	display: flex;
@@ -71,21 +56,18 @@
 	background: transparent;
 }
 
-/* Optional text above button */
 #clickMe {
 	font-size: 16px;
 	color: white;
 	margin-bottom: 5px;
 }
 
-/* Heart container */
 #heart {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-/* Heart button */
 #button {
 	background-image: url("../pic/love.png");
 	background-repeat: no-repeat;
@@ -104,34 +86,38 @@
 	transform: scale(0.92);
 }
 
-/* Prevent images from touching footer */
+/* Image + text container */
+#imgTxt {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+/* Image container with space for footer and play button */
 .img_container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: auto;
-	max-height: calc(100vh - 180px); /* Leaves space for header/footer */
-	padding-bottom: 20px; /* Space before footer */
+	padding-bottom: 100px; /* Prevent overlap with footer/play button */
 	overflow: hidden;
 }
 
 #img {
 	display: block;
-	max-width: 90%;
-	max-height: 100%;
+	margin: auto;
+	width: 100%;
+	max-width: 300px;
+	max-height: 80vh; /* Keep large images visible */
+	height: auto;
 	object-fit: contain;
 	border-radius: 40px;
 }
 
-#Txt{
-	display: inline-block;
-	font-size: 17px;
-	width: 100%;
-	text-align: center;
-	color: white;
-}
-
-#tmp{
+#Txt, #tmp {
 	display: inline-block;
 	font-size: 17px;
 	width: 100%;
